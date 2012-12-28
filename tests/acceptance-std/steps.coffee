@@ -1,9 +1,5 @@
-fs = require 'fs'
-path = require 'path'
 _ = require 'underscore'
 should = require 'should'
-powerfs = require 'powerfs'
-request = require 'request'
 sinon = require 'sinon'
 
 exports.factory = (lockecore, getLastEmail, clearDB) -> ->
