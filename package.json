@@ -41,6 +41,7 @@
     "npm": " 1.1.x"
   },
   "scripts": {
+    "postinstall": "coffee -co lib src",
     "pretest": "coffee -co lib src",
     "prestart": "coffee -co lib src",
     "prepublish": "coffee -co lib src",
