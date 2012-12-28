@@ -1,0 +1,18 @@
+* Todo:
+  - Testing the api-file (if there will be unit tests again)
+  - Test the db-interface to make it easier (and more safe) to implement new persistance layers
+  - Handle internal errors from the db-module. Can't just ignore them.
+  - Only validate locke-users should be able to create apps
+  - load test the db-layer
+  - It seems like baxter (or cucumber-js) does not return non-zero if the tests fail. Deploy continues due to this.
+  - Way too much data is exposed as return values from the service. Make sure this cant happen.
+
+* Feature 1
+  - Ensure that the tokens produced are cryptographically secure
+
+
+
+Lägg på versionshanteringen mellan server och klient. Versionnummer i urlarna?
+Testa jsonp-klienten också: https://github.com/IntoMethod/Lightweight-JSONP
+Bli av med clean-funktionen! # fixa mocka-testerna, så är den het borta
+
