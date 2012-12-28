@@ -1,1 +1,1 @@
-web: node bin/locke.js
+web: npm start

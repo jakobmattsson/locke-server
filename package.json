@@ -12,7 +12,7 @@
     "locke": "./bin/locke"
   },
   "dependencies": {
-    "npm": "1.1.70",
+    "npm": "1.1.x",
     "coffee-script": "1.4.0",
     "jsonrpc-http": "0.2.0",
     "jsonrpc-http-server": "0.1.1",
