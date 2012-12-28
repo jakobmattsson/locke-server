@@ -5,6 +5,7 @@ var fs = require('fs');
 var path = require('path');
 var optimist = require('optimist');
 var server = require('../lib/server');
+var emailFactory = require('../lib/email');
 
 var argv = optimist
   .usage('Runs a locke server')
@@ -44,7 +45,7 @@ if (process.env.NODE_ENV === 'production') {
   server.construct({
     hashRounds: 10,
     port: port,
-    emailClient: locke.email.setup({
+    emailClient: emailFactory.setup({
       user: nconf.get('emailUser'),
       password: nconf.get('emailPassword'),
       host: nconf.get('emailHost')
