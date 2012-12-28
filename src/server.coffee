@@ -3,12 +3,12 @@ rpcserver = require 'jsonrpc-http-server'
 jsonrpc = require 'jsonrpc-http'
 store = require 'locke-store-mongo'
 
-exports.construct = ({ port, hashRounds, emailClient }) ->
+exports.construct = ({ port, hashRounds, emailClient, mongo }) ->
 
   blacklistedPasswords = ['hejsan', 'abc123']
 
   db = store.factory({
-    connstr: 'localhost/locke'
+    connstr: mongo
   })
 
   sdb = lockeApi.secure(db, hashRounds)

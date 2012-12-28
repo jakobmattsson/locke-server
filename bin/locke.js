@@ -43,6 +43,7 @@ var port = process.env.PORT || nconf.get('port'); // get the upper-case PORT for
 
 if (process.env.NODE_ENV === 'production') {
   server.construct({
+    mongo: nconf.get('mongo'),
     hashRounds: 10,
     port: port,
     emailClient: emailFactory.setup({
@@ -53,6 +54,7 @@ if (process.env.NODE_ENV === 'production') {
   })
 } else {
   server.construct({
+    mongo: nconf.get('mongo'),
     hashRounds: 1,
     port: port,
     emailClient: {

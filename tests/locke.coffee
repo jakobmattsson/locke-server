@@ -19,7 +19,7 @@ emailClient = do ->
   getLastEmail: (callback) ->
     callback null, lastEmail
 
-refs = server.construct({ port: port, hashRounds: 1, emailClient: emailClient })
+refs = server.construct({ port: port, hashRounds: 1, emailClient: emailClient, mongo: 'localhost/locke' })
 
 
 
