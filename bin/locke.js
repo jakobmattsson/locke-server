@@ -39,7 +39,7 @@ if (argv.version) {
 
 nconf.env().defaults(argv);
 
-var port = nconf.get('port');
+var port = process.env.PORT || nconf.get('port'); // get the upper-case PORT foremost (if this is heroku)
 
 if (process.env.NODE_ENV === 'production') {
   server.construct({
