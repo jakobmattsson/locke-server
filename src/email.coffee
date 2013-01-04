@@ -7,7 +7,15 @@ exports.setup = (settings) ->
     host: settings.host
     ssl: true
 
-  send: (to, content, callback) ->
+  send: (to, data, callback) ->
+
+    keys = {
+      reset: 'reset'
+      validation: 'validate'
+    }
+
+    content = "https://lockeapp.herokuapp.com/#/#{keys[data.type]}/#{data.app}/#{to}/#{data.token}"
+
     message =
       from: "Support <support@lockeapp.com>"
       text: content
