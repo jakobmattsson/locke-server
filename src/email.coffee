@@ -14,7 +14,7 @@ exports.setup = (settings) ->
       validation: 'validate'
     }
 
-    content = "https://lockeapp.herokuapp.com/#/#{keys[data.type]}/#{data.app}/#{to}/#{data.token}"
+    content = "http://www.lockeapp.com/#/#{keys[data.type]}/#{data.app}/#{to}/#{data.token}"
 
     message =
       from: "Support <support@lockeapp.com>"
