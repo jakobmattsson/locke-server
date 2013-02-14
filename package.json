@@ -1,27 +1,27 @@
 {
   "name": "locke",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "main": "./lib/server.js",
   "bin": {
     "locke": "./bin/locke"
   },
   "dependencies": {
-    "npm": "1.1.70",
+    "npm": "1.2.10",
     "coffee-script": "1.4.0",
     "jsonrpc-http": "0.2.0",
-    "jsonrpc-http-server": "0.1.1",
-    "locke-api": "0.3.0",
+    "jsonrpc-http-server": "0.2.0",
+    "locke-api": "0.3.1",
     "locke-store-mongo": "0.3.0",
     "optimist": "0.3.5",
     "nconf": "0.6.7",
     "emailjs": "0.3.4",
-    "underscore": "1.4.3"
+    "underscore": "1.4.4"
   },
   "devDependencies": {
     "sinon": "1.5.2",
-    "jsontool": "5.1.1",
+    "jsontool": "5.1.2",
     "should": "1.2.1",
-    "mocha": "1.7.4",
+    "mocha": "1.8.1",
     "cucumber": "0.3.0",
     "request": "2.12.0"
   },
