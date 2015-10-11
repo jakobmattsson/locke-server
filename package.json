@@ -17,6 +17,7 @@
     "npm": ">= 1.1"
   },
   "dependencies": {
+    "coffee-script": "^1.6.0",
     "jsonrpc-http": "^0.2.0",
     "jsonrpc-http-server": "^0.2.0",
     "locke-api": "^0.3.1",
@@ -27,7 +28,6 @@
     "underscore": "^1.4.4"
   },
   "devDependencies": {
-    "coffee-script": "^1.6.0",
     "sinon": "^1.5.2",
     "jsontool": "^6.0.0",
     "should": "^2.0.2",
