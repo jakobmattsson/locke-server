@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+require('newrelic');
+
 var nconf = require('nconf');
 var fs = require('fs');
 var path = require('path');
