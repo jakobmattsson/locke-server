@@ -2,4 +2,5 @@ lib
 node_modules
 tmp
 temp
-
+newrelic.js
+newrelic_agent.log
